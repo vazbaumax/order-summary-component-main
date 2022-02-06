@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+body {
+  font-family: "Red Hat Display";
+  background-color: hsl(225, 100%, 94%);
+  background-image: url(/images/pattern-background-mobile.svg);
+  background-repeat: no-repeat, no-repeat;
+  box-sizing: content-box;
+}
+
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.order-summary {
+  width: 320px;
+  max-width: 375px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0px 1px 1px 0px hsl(223, 47%, 23%);
+}
+
+.order-summary--header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.order-summary--header_hero {
+  height: 150px;
+  width: 100%;
+  min-width: 320px;
+  background-image: url(/images/illustration-hero.svg);
+  background-position: center;
+  background-size: contain;
+  border-radius: 15px 15px 0px 0px;
+}
+
+.order-summary--header_title {
+  font-weight: 900;
+  margin-block: 0;
+  margin-top: 1.2em;
+  color: hsl(223, 47%, 23%);
+}
+
+.order-summary--header_description {
+  color: hsl(224, 23%, 55%);
+  line-height: 2em;
+  width: 85%;
+  font-size: 16px;
+}
+
+.order-summary--main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+.order-summary--main_icon {
+  margin-right: 15px;
+}
+.order-summary--main_text {
+  padding-top: 15px;
+  line-height: 8px;
+}
+.order-summary--main_text__title {
+  color: hsl(223, 47%, 23%);
+  font-size: small;
+  margin-block: 0;
+  font-weight: 900;
+}
+.order-summary--main_text__description {
+  color: hsl(224, 23%, 55%);
+  font-size: small;
+}
+.order-summary--main_link {
+  margin-left: 50px;
+  font-size: small;
+  font-weight: 700;
+}
+
+.order-summary--main_link:hover {
+  color: rgb(117, 104, 250);
+  text-decoration: none;
+}
+
+.order-summary--footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.order-summary--footer_button {
+  width: 75%;
+  color: hsl(225, 100%, 98%);
+  background-color: hsl(245, 75%, 52%);
+  border-radius: 10px;
+  padding: 15px;
+  text-decoration: none;
+  font-size: medium;
+  font-weight: 700;
+}
+
+.order-summary--footer_button:hover {
+  background-color: rgb(117, 104, 250);
+}
+
+.order-summary--footer_link {
+  padding: 25px;
+  margin-bottom: 15px;
+  text-decoration: none;
+  color: hsl(224, 23%, 55%);
+  font-weight: 700;
+}
+
+.order-summary--footer_link:hover {
+  color: hsl(223, 47%, 23%);
+}
+
+@media only screen and (min-width: 365px) {
+  body {
+    background-image: url(/images/pattern-background-desktop.svg);
+  }
+
+  .order-summary {
+    width: 500px;
+  }
+}
